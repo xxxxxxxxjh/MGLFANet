@@ -22,4 +22,4 @@ Change detection data set with pixel-level binary labels；
 - **A** : images of t1 phase;
 - **B** : images of t2 phase;
 - **label** : label maps;
-- **list** : contains `train.txt`, `val.txt` and `test.txt`, each file records the image names (`XXX.p
+- **list** : contains `train.txt`, `val.txt` and `test.txt`,  each file records the image names (XXX.png) in the change detection dataset.
