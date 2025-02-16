@@ -25,3 +25,7 @@ Change detection data set with pixel-level binary labels；
 - **B** : images of t2 phase;
 - **label** : label maps;
 - **list** : contains `train.txt`, `val.txt` and `test.txt`,  each file records the image names (XXX.png) in the change detection dataset.
+
+# Train/Test
+
+python main_cd.py/python eval_cd.py
