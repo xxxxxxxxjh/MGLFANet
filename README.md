@@ -30,9 +30,9 @@ Change detection data set with pixel-level binary labels；
 
 ### Download method #1
 
-- **LEVIR-CD (2.3GB)**: [DropBox](https://www.dropbox.com/s/example_link1)
-- **WHU-CD (1.82GB)**: [DropBox](https://www.dropbox.com/s/example_link2)
-- **DSIFN-CD (3.38GB)**: [DropBox](https://www.dropbox.com/s/example_link3)
+- **LEVIR-CD **: [DropBox](https://www.dropbox.com/scl/fi/uvp5q311jul5hzrvoivte/LEVIR-CD-256.zip?rlkey=3uahso53jvdmjfvw7fbotwb36&e=1&dl=0)
+- **WHU-CD **: [DropBox](https://www.dropbox.com/scl/fi/8gczkg78fh95yofq5bs7p/WHU.zip?rlkey=05bpczx0gdp99hl6o2xr1zvyj&e=1&dl=0)
+- **DSIFN-CD **: [DropBox](https://www.dropbox.com/scl/fi/ydj4u2shjp02n5q249au3/DSIFN.zip?rlkey=e0fa7iekeijos7o5xxbyy6bi4&e=1&dl=0)
 
 
 # Train/Test
