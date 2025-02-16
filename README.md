@@ -1,6 +1,6 @@
 # MGLFA-Net: Multi-Scale Global-Local Feature Aggregation Network for Remote Sensing Change Detection
 
-# Change Detection Dataset
+
 
 ## Requirements
 
