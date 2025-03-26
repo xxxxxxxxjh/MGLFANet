@@ -235,33 +235,33 @@ class DifferenceEnhancementModule(nn.Module):
     def __init__(self, in_channels):
         super(DifferenceEnhancementModule, self).__init__()
         self.in_channels = in_channels
-        # 特征差异计算层
+
         self.diff_conv = nn.Conv2d(in_channels, in_channels, kernel_size=3, padding=1, bias=False)
-        # 差异增强注意力机制
+
         self.attention = nn.Sequential(
             nn.Conv2d(in_channels, in_channels // 2, kernel_size=1, bias=False),
             nn.ReLU(inplace=True),
             nn.Conv2d(in_channels // 2, in_channels, kernel_size=1, bias=False),
             nn.Sigmoid()
         )
-        # 特征融合层
+
         self.fusion_conv = nn.Conv2d(in_channels * 3, in_channels, kernel_size=1, bias=True)
 
         self.act = nn.GELU()
 
     def forward(self, inp_feats):
-        # 特征提取
+
         f1 = inp_feats[0]
         f2 = inp_feats[1]
-        # 计算差异特征
+
         diff = torch.abs(f1 - f2)
         diff = self.diff_conv(diff)
-        # 差异增强
+
         enhanced_diff = self.attention(diff) * diff
-        # 特征融合
+
         combined_features = torch.cat([f1, f2, enhanced_diff], dim=1)
         fused_features = self.fusion_conv(combined_features)
-        # 应用GELU激活函数
+
         fused_features = self.act(fused_features)
 
         return fused_features
