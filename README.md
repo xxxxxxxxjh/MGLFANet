@@ -34,7 +34,5 @@ Change detection data set with pixel-level binary labels；
 - **DSIFN-CD **: [DropBox](https://www.dropbox.com/scl/fi/ydj4u2shjp02n5q249au3/DSIFN.zip?rlkey=e0fa7iekeijos7o5xxbyy6bi4&e=1&dl=0)
 
 
-# Train/Test
 
-python main_cd.py/python eval_cd.py
 
